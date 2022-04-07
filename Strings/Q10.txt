@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{char students[100001];
+int t,pair,i=0;
+scanf("%d",&t);
+while(t--){
+    pair=0;
+    scanf("%s",students);
+    for(i=0;i<strlen(students);i++) {
+        if(students[i]=='g'&&students[i+1]=='b')
+        { pair++;
+        i++; }
+        else if(students[i]=='b'&&students[i+1]=='g')
+        {pair++;
+        i++;}}
+        printf("%d\n",pair);}
+	return 0;}
